@@ -1,0 +1,161 @@
+# ============================================================
+# VIRTUAL ENVIRONMENTS & DEPENDENCIES
+# ============================================================
+venv/
+env/
+ENV/
+.venv
+backend/venv/
+frontend/node_modules/
+node_modules/
+
+# ============================================================
+# PYTHON CACHE & BUILD
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+*.egg-info/
+
+# ============================================================
+# SENSITIVE FILES & CREDENTIALS (NEVER COMMIT)
+# ============================================================
+.env
+.env.local
+.env.*.local
+.env.production.local
+*.key
+*.pem
+*.p8
+backend/serviceAccountKey.json
+backend/firebase_key.json
+backend/firebase.json
+frontend/firebase.config.js
+config/credentials.json
+secrets/
+.secrets/
+
+# ============================================================
+# DATASETS & DATA FILES
+# ============================================================
+backend/data/
+*.csv
+*.xlsx
+*.xls
+cardio_records_export.csv
+retraining_dataset.csv
+data/
+datasets/
+
+# ============================================================
+# MACHINE LEARNING MODELS (LARGE FILES)
+# ============================================================
+backend/models/model.pkl
+backend/models/scaler.pkl
+backend/models/*.pkl
+backend/models/*.h5
+backend/models/*.joblib
+*.pkl
+*.h5
+*.joblib
+model_checkpoints/
+
+# ============================================================
+# IDE & EDITOR SPECIFIC FILES
+# ============================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+.code-workspace
+*.code-workspace
+.history/
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# BUILD & DISTRIBUTION
+# ============================================================
+frontend/dist/
+frontend/build/
+.vite/
+.next/
+out/
+
+# ============================================================
+# LOGGING & TEMPORARY FILES
+# ============================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+logs/
+tmp/
+temp/
+
+# ============================================================
+# NODE.JS & NPM
+# ============================================================
+npm-debug.log*
+npm-error.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================================
+# OS-SPECIFIC FILES
+# ============================================================
+.DS_Store
+Thumbs.db
+.windows-build-tools
+.env.swp
+*.swp
+.AppleDouble
+.LSOverride
+
+# ============================================================
+# DATABASE & BACKUP FILES
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+*.backup
+backup/
+*.tar.gz
+
+# ============================================================
+# IDE CACHES
+# ============================================================
+.eslintcache
+.stylelintcache
+.prettierignore
+
+# ============================================================
+# SYSTEM FILES
+# ============================================================
+desktop.ini
+.gitkeep
+._*
+
+# ============================================================
+# PRODUCTION BUILD ARTIFACTS
+# ============================================================
+dist/
+build/
+.next/
+out/
