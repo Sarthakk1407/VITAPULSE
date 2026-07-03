@@ -192,3 +192,8 @@ docker-compose.override.yml
 .prettierignore
 
 frontend_v2/js/firebase-init.js
+frontend_v2/js/config.js
+frontend_v2/admin-requests.html
+frontend_v2/admin-login.html
+frontend_v2/admin-audit.html
+frontend/src/firebase.js
