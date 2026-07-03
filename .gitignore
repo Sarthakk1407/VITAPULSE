@@ -25,7 +25,18 @@ build/
 htmlcov/
 .coverage
 *.cover
-*.egg-info/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+site-packages/
+
+# ============================================================
+# PYTHON PACKAGE MANAGERS
+# ============================================================
+Pipfile.lock
+poetry.lock
+.pdm.toml
+pip-log.txt
+pip-delete-this-directory.txt
 
 # ============================================================
 # SENSITIVE FILES & CREDENTIALS (NEVER COMMIT)
@@ -34,21 +45,32 @@ htmlcov/
 .env.local
 .env.*.local
 .env.production.local
+.env.development.local
+.env.test.local
 *.key
 *.pem
 *.p8
+*.crt
+*.cert
+*.pfx
 backend/serviceAccountKey.json
 backend/firebase_key.json
 backend/firebase.json
+.firebaserc
 frontend/src/firebase.js
-frontend/package.json
 frontend/firebase.config.js
 frontend_v2/js/config.js
+frontend_v2/js/firebase-init.js
 config/credentials.json
 secrets/
 .secrets/
 **/config.local.js
 **/config.local.json
+.netrc
+api_keys.txt
+tokens.txt
+oauth/
+auth/
 
 # ============================================================
 # DATASETS & DATA FILES
@@ -80,16 +102,14 @@ model_checkpoints/
 # ============================================================
 .vscode/
 .idea/
+.code-workspace
+*.code-workspace
 *.sublime-project
 *.sublime-workspace
 .project
 .pydevproject
 .settings/
-.code-workspace
-*.code-workspace
 .history/
-.DS_Store
-Thumbs.db
 
 # ============================================================
 # BUILD & DISTRIBUTION
@@ -99,6 +119,7 @@ frontend/build/
 .vite/
 .next/
 out/
+.turbo/
 
 # ============================================================
 # LOGGING & TEMPORARY FILES
@@ -121,6 +142,8 @@ npm-error.log*
 yarn-error.log*
 package-lock.json
 yarn.lock
+.npm/
+.yarn/cache/
 
 # ============================================================
 # OS-SPECIFIC FILES
@@ -128,10 +151,9 @@ yarn.lock
 .DS_Store
 Thumbs.db
 .windows-build-tools
-.env.swp
-*.swp
 .AppleDouble
 .LSOverride
+desktop.ini
 
 # ============================================================
 # DATABASE & BACKUP FILES
@@ -148,19 +170,23 @@ backup/
 # ============================================================
 .eslintcache
 .stylelintcache
+.cache/
+.eslintignore
+
+# ============================================================
+# DOCKER & CONTAINER
+# ============================================================
+docker-compose.override.yml
+.dockerignore
+
+# ============================================================
+# GIT HOOKS & TOOLS
+# ============================================================
+.husky/
+.pre-commit-config.yaml
+
+# ============================================================
+# MISC
+# ============================================================
+*.DS_Store
 .prettierignore
-
-# ============================================================
-# SYSTEM FILES
-# ============================================================
-desktop.ini
-.gitkeep
-._*
-
-# ============================================================
-# PRODUCTION BUILD ARTIFACTS
-# ============================================================
-dist/
-build/
-.next/
-out/
