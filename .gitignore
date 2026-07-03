@@ -40,10 +40,15 @@ htmlcov/
 backend/serviceAccountKey.json
 backend/firebase_key.json
 backend/firebase.json
+frontend/src/firebase.js
+frontend/package.json
 frontend/firebase.config.js
+frontend_v2/js/config.js
 config/credentials.json
 secrets/
 .secrets/
+**/config.local.js
+**/config.local.json
 
 # ============================================================
 # DATASETS & DATA FILES
