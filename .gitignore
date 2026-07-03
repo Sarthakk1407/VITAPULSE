@@ -190,3 +190,5 @@ docker-compose.override.yml
 # ============================================================
 *.DS_Store
 .prettierignore
+
+frontend_v2/js/firebase-init.js
